@@ -16,6 +16,10 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
+<style> #tawkchat-container { left: 0 !important; right: auto !important; } #tawkchat-container .tawk-chat-box .tawk-visitor-widget { display: none !important; }
+
+
 body {
   background: #f7f7f7;
   font-family: "Poppins", sans-serif;
