@@ -3,86 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Subjects</title>
+    <title>Subjects</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #eef2f3;
+            color: #2c3e50;
         }
+
         header {
-            background-color: #4CAF50;
+            background-color: #3498db;
             color: white;
             padding: 20px 0;
             text-align: center;
+            font-size: 24px;
+            font-weight: bold;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
+
         .container {
             width: 80%;
             margin: 20px auto;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
+
+        h1 {
+            text-align: center;
+            color: #2980b9;
+            margin-bottom: 30px;
+        }
+
         .subject-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
             list-style-type: none;
             padding: 0;
-            margin: 0;
         }
+
         .subject-list li {
-            margin: 15px 0;
+            background-color: #1abc9c;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.3s, background-color 0.3s;
         }
+
+        .subject-list li:hover {
+            background-color: #16a085;
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
         .subject-list a {
-            display: inline-block;
-            width: 100%;
-            background-color: #3498db;
             color: white;
             text-decoration: none;
-            padding: 12px 20px;
-            font-size: 1.2rem;
-            border-radius: 8px;
-            text-align: center;
-            transition: all 0.3s ease;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
-        .subject-list a:hover {
-            background-color: #2ecc71;
-            transform: translateY(-3px);
-            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
-        }
+
         footer {
             text-align: center;
-            background-color: #4CAF50;
+            padding: 15px;
+            background-color: #2980b9;
             color: white;
-            padding: 15px 0;
             margin-top: 20px;
-        }
-        footer p {
-            margin: 0;
-            font-size: 1rem;
         }
     </style>
 </head>
 <body>
-  <header>
-    <h1>Subjects</h1>
-  </header>
-  <main>
+    <header>
+        :Donya - Explore Subjects
+    </header>
     <div class="container">
+        <h1>Subjects</h1>
         <ul class="subject-list">
+            <li><a href="molecular_biology.html">Molecular Biology</a></li>
             <li><a href="topics.html?subject=Cell Biology">Cell Biology</a></li>
-            <li><a href="topics.html?subject=Molecular Biology">Molecular Biology</a></li>
             <li><a href="topics.html?subject=Biochemistry">Biochemistry</a></li>
         </ul>
     </div>
-  </main>
-  <footer>
-    <p>&copy; 2025 Your Website</p>
-  </footer>
+    <footer>
+        &copy; 2025 Donya's Website
+    </footer>
 </body>
 </html>
